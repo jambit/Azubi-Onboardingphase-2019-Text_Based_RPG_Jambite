@@ -1,9 +1,11 @@
 package com.jambit;
 
+import java.io.IOException;
+
 public class Functions {
 
 
-    public static void newPage() throws InterruptedException {
+    public static void newPage() throws InterruptedException, IOException {
         for (int i = 0; i <= 40; i++) {
             System.out.println("");
         }

@@ -7,7 +7,8 @@ import javax.sound.midi.MidiUnavailableException;
 import javax.sound.midi.Sequencer;
 import java.io.*;
 
-public class Music {
+public class
+Music {
     /**
      * @sequencer.open starts the midi sequencer
      * @InputStream creates a inputstream and defines the path of the midi file

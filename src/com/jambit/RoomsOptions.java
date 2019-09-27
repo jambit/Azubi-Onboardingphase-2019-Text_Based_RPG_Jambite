@@ -39,6 +39,9 @@ public class RoomsOptions {
                 GameState.liveCount = 0;
                 Leben.showLives(0);
                 break;
+            case "/add xp":
+                System.out.println();
+                Functions.addXp();
             default:
                 break;
         }

@@ -18,7 +18,8 @@ public class SaveGame {
 
                 do {
                     zeile = br.readLine();
-                    System.out.println(zeile);
+                    if(zeile != null)
+                        System.out.println(zeile);
                 }
                 while (zeile != null);
 
@@ -28,12 +29,12 @@ public class SaveGame {
 
     }
 
-    public void setHighscore() throws IOException {
+    public static void setHighscore() throws IOException {
 
-        FileWriter fw = new FileWriter("ausgabe.txt");
+        FileWriter fw = new FileWriter("src/highscore/JambiteHighscore.txt", true);
         BufferedWriter bw = new BufferedWriter(fw);
         bw.newLine();
-        bw.write(GameState.name + ": "+ GameState.xp);
+        bw.append(GameState.name + ": "+ GameState.xp);
         bw.close();
     }
 }

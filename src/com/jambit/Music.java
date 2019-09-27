@@ -31,7 +31,7 @@ public class Music {
             case "intro":
                 introMusic();
                 break;
-            case "kampf":
+            /*case "kampf":
                 fightmusic();
                 break;
             case "cantina":
@@ -97,9 +97,9 @@ public class Music {
                 tapreroom();
                 break;
             case "fishtank":
-                fishtank();
+                fishtank();*/
             default:
-
+                introMusic();
                 break;
 
         }

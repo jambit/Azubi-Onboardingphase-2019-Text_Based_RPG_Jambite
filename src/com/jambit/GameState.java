@@ -19,4 +19,6 @@ public class GameState {
     public static boolean bageloserDead = false;
     public static boolean adalIsDead = false;
     public static boolean firstTimeInElevator = true;
+    public static boolean kitchenSearched = false;
+
 }

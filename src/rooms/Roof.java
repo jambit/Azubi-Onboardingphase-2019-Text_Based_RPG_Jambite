@@ -43,6 +43,7 @@ public class Roof {
                             "◢◤ █▀▀████▄▄▄▄◢◤      \n" +
                             "█▄ █ーJ ███▀▀▀▀▀▀▀╬ ");
                     System.out.println("du steigst in den Hubschrauber ein");
+                    System.out.println();
 
                 default:
                     RoomsOptions.normalRoomOptions(input);

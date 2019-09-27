@@ -123,7 +123,7 @@ public class Music {
 
         sequencer.open();
 
-        InputStream is = new BufferedInputStream(new FileInputStream(new File("src/musik/.mid")));
+        InputStream is = new BufferedInputStream(new FileInputStream(new File("src/musik/spooky_intro.mid")));
 
         sequencer.setSequence(is);
 

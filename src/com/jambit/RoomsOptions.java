@@ -2,6 +2,7 @@ package com.jambit;
 
 import rooms.*;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class RoomsOptions {
@@ -101,7 +102,7 @@ public class RoomsOptions {
 
     }
 
-    public static void addLive() throws InterruptedException {
+    public static void addLive() throws InterruptedException, IOException {
         GameState.liveCount = GameState.liveCount + 1;
         System.out.println("");
         System.out.println("+ ❤");
@@ -110,7 +111,7 @@ public class RoomsOptions {
         System.out.println("");
     }
 
-    public static void showInventory() throws InterruptedException {
+    public static void showInventory() throws InterruptedException, IOException {
         System.out.println("");
         Leben.statusLeiste();
         System.out.println("");

@@ -19,21 +19,31 @@ public class Fight {
     public void kampf(String gegnerWahl) throws Exception {
         inFightHP = playerHP;
         Enemies gegner = new Enemies();
-        if (gegnerWahl.equals("tobi")) {
-            gegner.tobi();
-            intFight();
-        } else if (gegnerWahl == "drucker") {
-            gegner.printer();
-            intFight();
-        } else if (gegnerWahl == "yannik") {
-            gegner.yannik();
-            intFight();
-        } else if (gegnerWahl == "badgeloser") {
-            gegner.badgeloser();
-            intFight();
-        } else if (gegnerWahl == "adal") {
-            gegner.adal();
-            intFight();
+        switch (gegnerWahl){
+            case "tobi":
+                gegner.tobi();
+                intFight();
+                break;
+            case "drucker":
+                gegner.printer();
+                intFight();
+                break;
+            case "yannik":
+                gegner.yannik();
+                intFight();
+                break;
+            case "badgeloser":
+                gegner.badgeloser();
+                intFight();
+                break;
+            case "adal":
+                gegner.adal();
+                intFight();
+                break;
+            case "cherry":
+                gegner.cherryHuman();
+                intFight();
+                break;
         }
 
 
@@ -88,7 +98,7 @@ public class Fight {
             }
 
 
-             if (auswahl == 2) {
+            if (auswahl == 2) {
                 float chance = r.nextFloat();
                 if (chance <= Weapons.playerHitChance2) {
                     Enemies.enemyHealth = Enemies.enemyHealth - Weapons.playerDamage2;
@@ -268,9 +278,7 @@ public class Fight {
 
         System.out.println("\n[1]Waffen");
         Thread.sleep(500);
-        System.out.println("[2]Rüstung");
-        Thread.sleep(500);
-        System.out.println("[3]Zurück");
+        System.out.println("[2]Zurück");
         Thread.sleep(500);
         System.out.println("\nAuswahl: ");
         int wahlAusrüstung = kampfAuswahl.nextInt();
@@ -312,7 +320,7 @@ public class Fight {
                 if (chooseWeapon == 1) {
                     Weapons.currentWeapon = "faust";
                     waffen.switchWeapon();
-                    fightSystem();
+                    guertelOutFight();
                 } else if (chooseWeapon == 2) {
                     Weapons.currentWeapon = "kugelschreiber";
                     waffen.switchWeapon();
@@ -323,7 +331,7 @@ public class Fight {
 
             }
         } else if (wahlAusrüstung == 2) {
-
+            leaveFightLose();
 
         }
     }

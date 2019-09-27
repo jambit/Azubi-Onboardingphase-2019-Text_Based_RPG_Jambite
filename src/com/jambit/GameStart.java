@@ -26,7 +26,10 @@ public class GameStart {
 
 
     public static void setStats() throws InterruptedException, IOException {
-
+        Weapons.weaponFound("faust");
+        Weapons.currentWeapon = "faust";
+        Weapons waffen = new Weapons();
+        waffen.switchWeapon();
         Bag.tasche.put("Heiltrank", 0);
         System.out.println("Willkommen in der Welt von Jambite: \"Ein bissiges Abenteuer\"!");
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------------");

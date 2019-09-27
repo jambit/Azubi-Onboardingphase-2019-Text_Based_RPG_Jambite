@@ -11,7 +11,7 @@ public class Kickerroom {
         Music.sequencer.stop();
         //TODO add music
         Music kickerroomMusic = new Music();
-        kickerroomMusic.run("fishatankMusic");
+        kickerroomMusic.run("fishtankMusic");
 
         boolean inRoom = true;
         while (inRoom) {
@@ -21,9 +21,12 @@ public class Kickerroom {
             switch (input) {
 
                 case "umsehen":
-
+                    System.out.println("Am hintersten Kickertisch stehen vier Kreaturen über den Tisch gebeugt, ");
+                    System.out.println("sie scheinen sich sehr auf ihr Spiel zu konzentrieren.");
+                    System.out.println("Es scheint nicht sehr ratsam sie zu [unterbrechen].");
                     break;
-
+                case "unterbrechen":
+                    break;
                 case "rechts gehen":
 
                     break;

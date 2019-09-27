@@ -71,7 +71,7 @@ public class Enemies {
         klasse = "Gegner: ";
         song = "yannik";
         quickAttack = "Zigaretten klauen";
-        strongAttack = "";
+        strongAttack = "Alkohol-Entzug";
         enemyAttack1 = "";
         enemyAttack2 = "";
         enemyHealth = 150;
@@ -161,8 +161,8 @@ public class Enemies {
         nameNeu = gegnerName + "";
         klasse = "Boss: ";
         song = "adal";
-        quickAttack = "";
-        strongAttack = "";
+        quickAttack = "Spezi Klauen";
+        strongAttack = "Kicker-Verbot";
         enemyAttack1 = "";
         enemyAttack2 = "";
         enemyHealth = 100;
@@ -171,12 +171,50 @@ public class Enemies {
         xp = 1250;
         damageMod();
     }
+    void cherryHuman(){
+        gegnerAscii = "                                                                                        \n" +
+                "                                                      ██                                \n" +
+                "                                          ██    ██████                                  \n" +
+                "                                          ██  ██▒▒▒▒██                                  \n" +
+                "                                        ██████▒▒▒▒▒▒██                                  \n" +
+                "                                        ██  ██▒▒▒▒██                                    \n" +
+                "                                      ██    ██████                                      \n" +
+                "                                    ██    ██                                            \n" +
+                "                                    ██    ██                                            \n" +
+                "                                  ██        ██                                          \n" +
+                "                                ██            ████████                                  \n" +
+                "                            ████████        ██▒▒▒▒▒▒▒▒██                                \n" +
+                "                          ██▒▒▒▒▒▒▒▒██    ██▒▒▒▒▒▒▒▒▒▒▒▒██                              \n" +
+                "                        ██▒▒▒▒▒▒  ▒▒▒▒██  ██▒▒▒▒▒▒▒▒▒▒▒▒██                              \n" +
+                "                        ██▒▒▒▒▒▒▒▒  ▒▒██  ██▒▒  ▒▒▒▒▒▒▒▒██                              \n" +
+                "                        ██▒▒▒▒▒▒▒▒  ▒▒██  ██▒▒▒▒    ▒▒▒▒██                              \n" +
+                "                        ██▒▒▒▒▒▒▒▒▒▒▒▒██    ██▒▒▒▒▒▒▒▒██                                \n" +
+                "                          ██▒▒▒▒▒▒▒▒██        ████████                                  \n" +
+                "                            ████████                                                    \n" +
+                "                                                                 ";
+        gegnerName = "Cherry";
+        nameNeu = gegnerName + "";
+        klasse = "Boss: ";
+        song = "cherry1";
+        quickAttack = "Deep-Talk";
+        strongAttack = "Kuchen-Mail";
+        enemyAttack1 = "";
+        enemyAttack2 = "";
+        enemyHealth = 200;
+        trefferChance = 0.20f;
+        gegnerSchaden = 20;
+        xp = 5000;
+        damageMod();
+
+
+    }
 
     void beispiel() {
         /*gegnerAscii = "";
         gegnerName = "";
         nameNeu = "";
         klasse = "";
+        song = "";
         quickAttack = "";
         strongAttack = "";
         enemyAttack1 = "";

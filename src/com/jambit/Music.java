@@ -7,14 +7,7 @@ import javax.sound.midi.MidiUnavailableException;
 import javax.sound.midi.Sequencer;
 import java.io.*;
 
-public class
-Music {
-    /**
-     * @sequencer.open starts the midi sequencer
-     * @InputStream creates a inputstream and defines the path of the midi file
-     * @sequencer.setSequence gives the midi path to the sequencer
-     * @sequencer.start() starts the midi file playback
-     */
+public class Music {
 
 
     public static Sequencer sequencer;
@@ -32,10 +25,8 @@ Music {
             case "intro":
                 introMusic();
                 break;
-            /*case "kampf":
-                fightmusic();
-                break;
-            case "cantina":
+            /*
+            case "küche":
                 kueche();
                 break;
             case "elevatorMusic":
@@ -52,8 +43,19 @@ Music {
             case "kopiermon":
                 break;
             case "yannik":
+                yannikMusic();
                 break;
+            */
             case "adal":
+                adalMusic();
+                break;
+            /*
+            case "cherry1":
+                cherry1Music();
+                break;
+                /*
+            case "cherry2":
+                cherry2Music();
                 break;
             case "gameover":
                 gameOver();
@@ -104,21 +106,15 @@ Music {
                 break;
 
         }
-        /*
-        swich case ist besser Finn!!!!!!!!
 
-        if (titel.equals("intro")) {
-
-            introMusic();
-
-        } else if (titel.equals("kampf")) {
-            fightmusic();
-        } else if (titel.equals("cantina")) {
-            cantina();
-        }
-
-         */
     }
+
+    /**
+     * @sequencer.open starts the midi sequencer
+     * @InputStream creates a inputstream and defines the path of the midi file
+     * @sequencer.setSequence gives the midi path to the sequencer
+     * @sequencer.start() starts the midi file playback
+     */
 
     void introMusic() throws Exception {
 
@@ -132,7 +128,29 @@ Music {
     }
 
 
-    void fightmusic() throws Exception {
+    void tobiMusic() throws Exception {
+
+        sequencer.open();
+
+        InputStream is = new BufferedInputStream(new FileInputStream(new File("src/musik/circus.mid")));
+
+        sequencer.setSequence(is);
+
+        sequencer.start();
+    }
+
+    void cherry1Music() throws Exception {
+
+        sequencer.open();
+
+        InputStream is = new BufferedInputStream(new FileInputStream(new File("src/musik/polka1.mid")));
+
+        sequencer.setSequence(is);
+
+        sequencer.start();
+    }
+
+    void cherry2Music() throws Exception {
 
         sequencer.open();
 
@@ -143,7 +161,40 @@ Music {
         sequencer.start();
     }
 
-    void kueche() throws Exception {
+    void adalMusic() throws Exception {
+
+        sequencer.open();
+
+        InputStream is = new BufferedInputStream(new FileInputStream(new File("src/musik/bgrass1.mid")));
+
+        sequencer.setSequence(is);
+
+        sequencer.start();
+    }
+
+    void druckerMusic() throws Exception {
+
+        sequencer.open();
+
+        InputStream is = new BufferedInputStream(new FileInputStream(new File("src/musik/.mid")));
+
+        sequencer.setSequence(is);
+
+        sequencer.start();
+    }
+
+    void yannikMusic() throws Exception {
+
+        sequencer.open();
+
+        InputStream is = new BufferedInputStream(new FileInputStream(new File("src/musik/.mid")));
+
+        sequencer.setSequence(is);
+
+        sequencer.start();
+    }
+
+    void kuecheMusic() throws Exception {
 
         sequencer.open();
 
@@ -166,7 +217,6 @@ Music {
     }
 
 
-
     void corridor1Music() throws Exception {
 
         sequencer.open();
@@ -177,6 +227,7 @@ Music {
 
         sequencer.start();
     }
+
     void gameOver() throws Exception {
 
         sequencer.open();
@@ -187,6 +238,7 @@ Music {
 
         sequencer.start();
     }
+
     void badgeloser() throws Exception {
 
         sequencer.open();
@@ -197,6 +249,7 @@ Music {
 
         sequencer.start();
     }
+
     void basement() throws Exception {
 
         sequencer.open();
@@ -207,6 +260,7 @@ Music {
 
         sequencer.start();
     }
+
     void corridor1() throws Exception {
 
         sequencer.open();
@@ -217,6 +271,7 @@ Music {
 
         sequencer.start();
     }
+
     void corridor2() throws Exception {
 
         sequencer.open();
@@ -227,6 +282,7 @@ Music {
 
         sequencer.start();
     }
+
     void drinksstorage() throws Exception {
 
         sequencer.open();
@@ -237,6 +293,7 @@ Music {
 
         sequencer.start();
     }
+
     void edeka() throws Exception {
 
         sequencer.open();
@@ -247,6 +304,7 @@ Music {
 
         sequencer.start();
     }
+
     void elevator() throws Exception {
 
         sequencer.open();
@@ -257,6 +315,7 @@ Music {
 
         sequencer.start();
     }
+
     void fishtank() throws Exception {
 
         sequencer.open();
@@ -267,6 +326,7 @@ Music {
 
         sequencer.start();
     }
+
     void hr() throws Exception {
 
         sequencer.open();
@@ -277,6 +337,7 @@ Music {
 
         sequencer.start();
     }
+
     void kickerroom() throws Exception {
 
         sequencer.open();
@@ -287,6 +348,7 @@ Music {
 
         sequencer.start();
     }
+
     void kitchen() throws Exception {
 
         sequencer.open();
@@ -297,6 +359,7 @@ Music {
 
         sequencer.start();
     }
+
     void markusplatz() throws Exception {
 
         sequencer.open();
@@ -307,6 +370,7 @@ Music {
 
         sequencer.start();
     }
+
     void roof() throws Exception {
 
         sequencer.open();
@@ -317,6 +381,7 @@ Music {
 
         sequencer.start();
     }
+
     void stairs() throws Exception {
 
         sequencer.open();
@@ -327,6 +392,7 @@ Music {
 
         sequencer.start();
     }
+
     void street() throws Exception {
 
         sequencer.open();
@@ -337,6 +403,7 @@ Music {
 
         sequencer.start();
     }
+
     void sumatra() throws Exception {
 
         sequencer.open();
@@ -347,6 +414,7 @@ Music {
 
         sequencer.start();
     }
+
     void tapreroom() throws Exception {
 
         sequencer.open();

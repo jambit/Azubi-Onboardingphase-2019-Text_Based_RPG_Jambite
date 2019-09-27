@@ -12,6 +12,7 @@ public class Main {
 //        SaveGame.setHighscore();
 //        SaveGame.showHighscore();
 
+
         GameStart start = new GameStart();
         start.run();
 

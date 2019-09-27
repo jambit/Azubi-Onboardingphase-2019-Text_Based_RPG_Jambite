@@ -13,6 +13,28 @@ public class Corridor2 {
         Music corridor2Music = new Music();
         corridor2Music.run("corridor2Music");
 
+        System.out.println("\n" + " _____________________________________________\n" +
+                "|.'',                                     ,''.|\n" +
+                "|.'.'',                                 ,''.'.|\n" +
+                "|.'.'.'',                             ,''.'.'.|\n" +
+                "|.'.'.'.'',                         ,''.'.'.'.|\n" +
+                "|.'.'.'.'.'',                       |.'.'.'.'.|\n" +
+                "|.'.'.'.'.'.'',                 ;===|.'.'.'.'.|\n" +
+                "|.'.'.'.''.'.'.',             ,'|:::|.'.'.'.'.|\n" +
+                "|.'.'.'.''.'.'.'.|, _______ ,|.'|---|.'.'.'.'.|\n" +
+                "|.'.'.'.'.''.'.'.|'|???????|'|.'|:::|.'.'.'.'.|\n" +
+                "|,',',',',',',','|'|???????|'|,'|---|,',',',',|\n" +
+                "|.'.'.'.'.'.'.'.'|'|???????|'|.'|:::|.'.'.'.'.|\n" +
+                "|.'.'.'.'.'.'.'.,'   /%%%\\  '|,'|---|.'.'.'.'.|\n" +
+                "|.'.'.'.'.'.'.''    /%%%%%\\    '|===|.'.'.'.'.|\n" +
+                "|.'.'.'.'.'.'      /%%%%%%%%%%%%%%%%|.'.'.'.'.|\n" +
+                "|.'.'.'.','       /%%%%%%%%%\\       ','.'.'.'.|\n" +
+                "|.'.'.','        /%%%%%%%%%%%\\        ','.'.'.|\n" +
+                "|.'.','         /%%%%%%%%%%%%%\\         ','.'.|\n" +
+                "|.','          /%%%%%%%%%%%%%%%\\          ','.|\n" +
+                "|;____________/%%%%%%%%%%%%%%%%%\\____________.|");
+
+        System.out.println("\nDu befindest dich im Gang2");
         boolean inRoom = true;
         while (inRoom) {
             GameState.whereAmI = Constants.DRINKSSTORRAGE;
@@ -21,15 +43,16 @@ public class Corridor2 {
             switch (input) {
 
                 case "umsehen":
+                    System.out.println("Rechts befindet sich der Kickerraum [rechts gehen]");
 
                     break;
 
                 case "rechts gehen":
-
+                    Kickerroom.startKickerroom();
                     break;
 
                 case "links gehen":
-                    Corridor1.startCorridor1();
+
                     break;
 
                 default:

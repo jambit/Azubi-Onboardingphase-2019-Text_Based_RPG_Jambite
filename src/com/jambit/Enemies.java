@@ -225,6 +225,41 @@ public class Enemies {
         xp = ;
         damageMod();*/
     }
+    void kickermonster() {
+        gegnerAscii = "                                          .-. _)/\n" +
+                "                                         (0,0) .\\\n" +
+                "                                          (u)   ()\n" +
+                "     .-.                           _\\)  .-=\"=-.//\n" +
+                "    (o,o)                            \\,//==\\===\n" +
+                "     (e)                              ()  =====            .-.\n" +
+                "   .-=\"=-.  \\(_           .-.         _____ =,=           (a.a)\n" +
+                "  //==I==\\\\,/            (d.b)       ()--___(0V0)  (/_     (=)\n" +
+                " ()  =\"=  ()              (u)        ||()----'      \\, ___.=\"==-._\n" +
+                "  \\`(0V0)               .-=\"-.       |' \\\\           ()---` ==\\==\\\\\n" +
+                " /|) ||\\\\              //==/=\\\\    ==\"   \\'                   =\"= ()\n" +
+                "     || \\\\  ==.       () ==== ()_/_    ==\"               ____(0V0) \\`\n" +
+                "     ()  ()    \\,      `\\\"=      `                      ()---` // (|\\\n" +
+                "    //  //      \\\\ ___(0);`                             ||    //\n" +
+                "   '/  '/        ()---'  \\\\                             |'   ()\n" +
+                "   \"== \"==                \\\\                          ==\"     \\\\\n" +
+                "                           ()                                  \\`\n" +
+                "                          //                                  ==\"\n" +
+                "                         '/                             \n" +
+                "                         \"==    ";
+        gegnerName = "Kickermonster";
+        nameNeu = gegnerName + "";
+        klasse = "Boss: ";
+        song = "";
+        quickAttack = "Pass";
+        strongAttack = "Abroller";
+        enemyAttack1 = "";
+        enemyAttack2 = "";
+        enemyHealth = 300;
+        trefferChance = 0.30f;
+        gegnerSchaden = 30;
+        xp = 7000;
+        damageMod();
+    }
 
     void damageMod() {
         if (GameState.difficulty == "leicht") {

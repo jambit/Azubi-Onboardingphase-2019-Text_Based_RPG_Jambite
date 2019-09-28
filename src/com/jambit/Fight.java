@@ -44,6 +44,9 @@ public class Fight {
                 gegner.cherryHuman();
                 intFight();
                 break;
+            case "kicker":
+                gegner.kickermonster();
+                intFight();
         }
 
 
@@ -341,48 +344,49 @@ public class Fight {
             case "Sumatra":
                 Sumatra.startSumatra();
                 break;
-            case "Küche":
+            case "Kitchen":
                 Kitchen.startKitchen();
                 break;
-            case "Gang1":
+            case "Corridor1":
                 Corridor1.startCorridor1();
                 GameState.bageloserDead = true;
                 break;
-            case "TAVorraum":
+            case "TApreroom":
                 TApreroom.startTAPreroom();
                 break;
-            case "Aufzug":
+            case "Elevator":
                 Elevator elevator = new Elevator();
                 elevator.startElevator();
                 break;
-            case "Glaskasten":
+            case "Fishtank":
                 Fishtank.startFishtank();
                 break;
-            case "Gang2":
+            case "Corridor2":
                 Corridor2.startCorridor2();
                 break;
             case "Markusplatz":
                 Markusplatz.startMarkusplatz();
+                GameState.printerIsDead = true;
                 break;
             case "HR":
                 HR.startHR();
                 break;
-            case "Treppenhaus":
+            case "Stairs":
                 Stairs.startStairs();
                 break;
-            case "Getränkelager":
+            case "Drinksstorage":
                 Drinksstorage.startDrinksstorrage();
                 break;
-            case "Keller":
+            case "Basement":
                 Basement.startBasement();
                 break;
-            case "Dach":
+            case "Roof":
                 Roof.startRoof();
                 break;
-            case "Straße":
+            case "Street":
                 Street.startStreet();
                 break;
-            case "Kickerraum":
+            case "Kickerroom":
                 Kickerroom.startKickerroom();
                 break;
             case "Edeka":

@@ -21,6 +21,19 @@ public class Markusplatz {
             switch (input) {
 
                 case "umsehen":
+                    System.out.println("Es führt ein gang nach links und einer nach rechts.");
+                    if (GameState.printerIsDead == false) {
+                        System.out.println("Zunächst fällt dir nichts weiter auf doch bei genauerem hinsehen entdeckst du einige");
+                        System.out.println("verdächtige Tinten Spuren, die allesamt zum Drucker zu führen scheinen.");
+                        System.out.println("[spuren untersuchen]");
+                    }
+                    if (!Weapons.foundWeapons.contains("kugelschreiber")){
+                        System.out.println("\n Desweiteren bemerkst du in einer der Ecken ein leichtes silbernes glitzern.");
+                        System.out.println("[glitzern untersuchen]");
+                    }
+                    if (Weapons.foundWeapons.contains("kugelschreiber") && GameState.printerIsDead == true){
+                        System.out.println("Du bermerkst weiter nichts besonderes.");
+                    }
 
                     break;
 

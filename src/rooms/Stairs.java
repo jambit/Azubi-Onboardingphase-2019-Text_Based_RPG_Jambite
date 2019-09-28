@@ -34,7 +34,9 @@ public class Stairs {
                 "      \"Ya8          Normand Veilleux        8\n" +
                 "        \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n" +
                 "\n");
-        System.out.println("du befindest dich im Treppenhaus\n");
+        System.out.println("\nDu befindest dich im Treppenhaus");
+        System.out.printf("Rechts befindet sich der Gang1 [rechts gehen]");
+        System.out.printf("Links befindt sich die HR Abteilung [links gehen]");
 
         boolean inRoom = true;
         while (inRoom) {
@@ -49,8 +51,14 @@ public class Stairs {
                     break;
                 case "runter gehen":
                     Corridor2.startCorridor2();
+                    double randomNumber = Math.random();
+                    if (randomNumber < 0.5) {
+                        System.out.printf("");
+                        System.out.printf("als du auf die erste Stufe trittst löst sich diese und dein Bein wird eingeklemmt");
+//todo add bossfight: Die loose Stufe
+                    }
                     break;
-                    
+
                 case "rechts gehen":
                     Corridor1.startCorridor1();
                     break;

@@ -261,6 +261,38 @@ public class Enemies {
         damageMod();
     }
 
+
+
+
+    void triangle() {
+        gegnerAscii = "        /\\   \\        \n" +
+                "         /  \\   \\\n" +
+                "                 /    \\   \\\n" +
+                "                 /      \\   \\\n" +
+                "                 /   /\\   \\   \\\n" +
+                "                 /   /  \\   \\   \\\n" +
+                "                 /   /    \\   \\   \\\n" +
+                "                 /   /    / \\   \\   \\\n" +
+                "                 /   /    /   \\   \\   \\\n" +
+                "                 /   /    /---------'   \\\n" +
+                "                 /   /    /_______________\\\n" +
+                "            \\  /                     /\n" +
+                "            \\/_____________________/";
+        gegnerName = "Dreieck";
+        klasse = "Gegner: ";
+        song = "yannik";
+        quickAttack = "die Ecke falten";
+        strongAttack = "rollen";
+        enemyAttack1 = "";
+        enemyAttack2 = "";
+        enemyHealth = 150;
+        trefferChance = 0.20f;
+        gegnerSchaden = 40;
+        xp = 1500;
+        damageMod();
+    }
+
+
     void damageMod() {
         if (GameState.difficulty == "leicht") {
             gegnerSchaden = (int) (gegnerSchaden * 0.75);

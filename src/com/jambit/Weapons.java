@@ -69,7 +69,7 @@ public class Weapons {
 
     }
 
-    void switchWeapon() {
+    public void switchWeapon() {
         if (currentWeapon == "faust") {
             faust();
         } else if (currentWeapon == "kugelschreiber") {

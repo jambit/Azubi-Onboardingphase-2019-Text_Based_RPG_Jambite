@@ -21,5 +21,6 @@ public class GameState {
     public static boolean firstTimeInElevator = true;
     public static boolean kitchenSearched = false;
     public static boolean printerIsDead = false;
+    public static boolean cherry1Dead = false;
 
 }

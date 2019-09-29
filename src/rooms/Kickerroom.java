@@ -26,6 +26,7 @@ public class Kickerroom {
                     System.out.println("Es scheint nicht sehr ratsam sie zu [unterbrechen].");
                     break;
                 case "unterbrechen":
+                    System.out.println("Sämtliche");
                     Fight kampf = new Fight();
                     kampf.kampf("kicker");
                     break;

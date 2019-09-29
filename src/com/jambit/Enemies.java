@@ -101,9 +101,9 @@ public class Enemies {
         strongAttack = "Stecker ziehen";
         enemyAttack1 = "";
         enemyAttack2 = "";
-        enemyHealth = 200;
-        trefferChance = 0.20f;
-        gegnerSchaden = 30;
+        enemyHealth = 150;
+        trefferChance = 0.10f;
+        gegnerSchaden = 20;
         xp = 5000;
         damageMod();
 

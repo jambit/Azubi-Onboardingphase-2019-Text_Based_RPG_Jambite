@@ -358,24 +358,24 @@ public class Fight {
             case "Sumatra":
                 Sumatra.startSumatra();
                 break;
-            case "Kitchen":
+            case "Küche":
                 Kitchen.startKitchen();
                 break;
-            case "Corridor1":
+            case "Gang1":
                 Corridor1.startCorridor1();
                 GameState.bageloserDead = true;
                 break;
-            case "TApreroom":
+            case "TAVorraum":
                 TApreroom.startTAPreroom();
                 break;
-            case "Elevator":
+            case "Aufzug":
                 Elevator elevator = new Elevator();
                 elevator.startElevator();
                 break;
-            case "Fishtank":
+            case "Glaskasten":
                 Fishtank.startFishtank();
                 break;
-            case "Corridor2":
+            case "Gang2":
                 Corridor2.startCorridor2();
                 break;
             case "Markusplatz":
@@ -385,22 +385,22 @@ public class Fight {
             case "HR":
                 HR.startHR();
                 break;
-            case "Stairs":
+            case "Treppenhaus":
                 Stairs.startStairs();
                 break;
-            case "Drinksstorage":
+            case "Getränkelager":
                 Drinksstorage.startDrinksstorrage();
                 break;
-            case "Basement":
+            case "Keller":
                 Basement.startBasement();
                 break;
-            case "Roof":
+            case "Dach":
                 Roof.startRoof();
                 break;
-            case "Street":
+            case "Straße":
                 Street.startStreet();
                 break;
-            case "Kickerroom":
+            case "Kickerraum":
                 Kickerroom.startKickerroom();
                 break;
             case "Edeka":

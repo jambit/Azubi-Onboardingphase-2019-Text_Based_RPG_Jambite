@@ -49,7 +49,7 @@ public class RoomsOptions {
 
     public static void tp() throws Exception {
         while (true) {
-            System.out.println("Scnellreise:");
+            System.out.println("Schnellreise:");
             Scanner scanner = new Scanner(System.in);
             String tpRaum = scanner.nextLine();
             switch (tpRaum) {

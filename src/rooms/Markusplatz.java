@@ -23,27 +23,37 @@ public class Markusplatz {
             switch (input) {
 
                 case "umsehen":
-                    System.out.println("Es führt ein gang nach links und einer nach rechts.");
+                    System.out.println("Es führt ein gang nach links und einer nach rechts.\n");
                     if (GameState.printerIsDead == false) {
+                        Thread.sleep(1000);
                         System.out.println("Zunächst fällt dir nichts weiter auf doch bei genauerem hinsehen entdeckst du einige ");
                         System.out.println("verdächtige Tinten Spuren, die allesamt zum Drucker zu führen scheinen.");
+                        Thread.sleep(1000);
                         System.out.println("[spuren untersuchen]");
+                        Thread.sleep(1000);
                     }
                     if (!Weapons.foundWeapons.contains("kugelschreiber")){
                         System.out.println("\n Desweiteren bemerkst du in einer der Ecken ein leichtes silbernes glitzern.");
+                        Thread.sleep(1000);
                         System.out.println("[glitzern untersuchen]");
+                        Thread.sleep(1000);
                     }
                     if (Weapons.foundWeapons.contains("kugelschreiber") && GameState.printerIsDead == true){
                         System.out.println("Du bermerkst weiter nichts besonderes.");
+                        Thread.sleep(1000);
                     }
 
                     break;
                 case "spuren untersuchen":
                     if (GameState.printerIsDead == false){
                         System.out.println("Während du dich langsam auf den Drucker zu bewegst hörst du ein leises Grummeln, ");
+                        Thread.sleep(1000);
                         System.out.println("das immer lauter zu werden scheint.");
+                        Thread.sleep(1000);
                         System.out.println("Plötzlich, als du schon fast vor ihm stehst, macht er einen einen kleinen Sprung nach vorne ");
-                        System.out.println("und greift dich an.");
+                        Thread.sleep(1000);
+                        System.out.println("und greift dich an.\n");
+                        Thread.sleep(1000);
                         kampf.kampf("drucker");
                     }
                     else{
@@ -53,7 +63,7 @@ public class Markusplatz {
                 case "glitzern untersuchen":
                     if(GameState.printerIsDead == false){
                         System.out.println("Als du dich näher auf das Glitzern zu bewegen willst, dreht sich der Drucker in deine Richtung ");
-                        System.out.println("und greift dich an.");
+                        System.out.println("und greift dich an.\n");
                         kampf.kampf("drucker");
                     }
                     if(GameState.printerIsDead == true){

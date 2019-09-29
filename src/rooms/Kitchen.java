@@ -22,6 +22,8 @@ public class Kitchen {
             switch (input) {
 
                 case "umsehen":
+                    System.out.println("Bis auf die tür durch du gerade kamst scheint es nur einen anderen Weg aus diesem raum zu geben.");
+                    System.out.println("[rechts gehen]");
                     System.out.println("Jeder einzelne Zentimeter dieses Raumes scheint mit dreckigem Geschirr belegt zu sein.");
                     System.out.println("Aus einer Apparatur, die an der Spülmaschine hängt sprühen Funken.");
                     if (GameState.kitchenSearched == false) {
@@ -35,7 +37,7 @@ public class Kitchen {
 
                 case "durchsuchen":
                     if(GameState.kitchenSearched == false){
-                        System.out.println("Du durchsuchst sämtliche Schränke und findest: \n2 Heiltränke!");
+                        System.out.println("Du durchsuchst sämtliche Schränke und findest: \n[2 Heiltränke]!");
                         Integer zahl = Bag.tasche.get("Heiltrank");
                         Bag.tasche.replace("Heiltrank", zahl + 2);
 

@@ -63,4 +63,12 @@ public class Dialog {
         System.out.println("der Kampf beginnt");
         System.in.read();
     }
+
+    public static void credits(){
+        System.out.println("This is a work of fiction. Names, characters, places and incidents either are products of" +
+                " the author’s imagination or are used fictitiously. Any resemblance to actual events or locales or " +
+                "persons, living or dead, is entirely coincidental.");
+        System.out.println("NO DOGS WERE HARMED DURING THE MAKING OF THIS GAME. THE CAT GOT SICK AND SOMEBODY SHOT" +
+                " A DUCK BUT THAT'S ABOUT IT.");
+    }
 }

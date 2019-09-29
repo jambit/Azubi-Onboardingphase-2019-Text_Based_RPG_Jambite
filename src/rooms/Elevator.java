@@ -32,9 +32,8 @@ public class Elevator {
         if (GameState.firstTimeInElevator = true) {
             System.out.println(
                     "════════════════════════════════════════════════════════════════════════════════════════════════════════════════════\n" +
-                            "Als du erwachst fühlst du einen stechenden Schmerz, welcher sich durch deinen gesamten " +
-                            "Körper zieht.\n" +
-                            "Alles scheint sich zu drehen, doch nach einigen Sekunden des Konzentrierens schafft du es " +
+                            "Als du erwachst fühlst du einen stechenden Schmerz am Kopf. Alles scheint sich zu " +
+                            "drehen, \ndoch nach einigen Sekunden des Konzentrierens schafft du es " +
                             "aufzustehen.\n");
             GameState.firstTimeInElevator = false;
         }

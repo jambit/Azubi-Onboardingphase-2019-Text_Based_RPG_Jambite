@@ -21,7 +21,7 @@ public class Roof {
             switch (input) {
 
                 case "umsehen":
-                    System.out.println("\n in der Mitte des Daches steht ein Hubschrauber ");
+                    System.out.println("\n in der Mitte des Daches steht ein Hubschrauber [get to the choppa]");
                     break;
 
                 case "springen":
@@ -42,8 +42,10 @@ public class Roof {
                             "═▂▄▄▓▄▄▂\n" +
                             "◢◤ █▀▀████▄▄▄▄◢◤      \n" +
                             "█▄ █ーJ ███▀▀▀▀▀▀▀╬ ");
-                    System.out.println("du steigst in den Hubschrauber ein");
+                    System.out.println("du steigst in den Hubschrauber ein und entkommst dem Alptraum");
                     System.out.println();
+
+
 
                 default:
                     RoomsOptions.normalRoomOptions(input);

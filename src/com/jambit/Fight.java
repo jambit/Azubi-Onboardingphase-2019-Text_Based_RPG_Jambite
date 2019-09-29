@@ -19,7 +19,7 @@ public class Fight {
     public void kampf(String gegnerWahl) throws Exception {
         inFightHP = playerHP;
         Enemies gegner = new Enemies();
-        switch (gegnerWahl){
+        switch (gegnerWahl) {
             case "tobi":
                 gegner.tobi();
                 intFight();
@@ -47,8 +47,22 @@ public class Fight {
             case "kicker":
                 gegner.kickermonster();
                 intFight();
+                break;
+            case "dieLooseStufe":
+                gegner.dieLooseStufe();
+                intFight();
+                break;
+            case "trianle":
+                gegner.triangle();
+                intFight();
+                break;
+            case "dieGetränkenixe":
+                gegner.dieGetraenkenixe();
+                intFight();
+                break;
+            default:
+                break;
         }
-
 
     }
 

@@ -14,7 +14,7 @@ public class Basement {
         basementMusic.run("basementMusic");
 
         System.out.println("        __..---'''---...___\n" +
-                "              .'                   '.\n" +
+                "              .'     Teleporter    '.\n" +
                 "             | .-------------------. |\n" +
                 "             | |                   | |\n" +
                 "             | |                   | |\n" +
@@ -33,9 +33,9 @@ public class Basement {
                 "             | |                   | |\n" +
                 "             | |                   | |\n" +
                 "             | |                   | |\n" +
-                "             | |                   | |\n" +
-                "             | |                   | |\n" +
                 "             |_|___________________|_|\n");
+
+        System.out.println("");
 
         boolean inRoom = true;
         while (inRoom) {
@@ -57,22 +57,29 @@ public class Basement {
                     if (GameState.currentItems[3].equals("\uD83D\uDD0B")) {
                         System.out.println("\ndu setzt die glühende Batterie vorichtig ein und drückst auf den grünen" +
                                 " Knopf");
-                        Thread.sleep(80);
+                        Thread.sleep(150);
                         System.out.println("charging system");
-                        Thread.sleep(80);
-                        System.out.print(" .");
-                        Thread.sleep(80);
-                        System.out.print(" .");
-                        Thread.sleep(80);
-                        System.out.print(" .");
-                        Thread.sleep(80);
-                        System.out.print(" .");
-                        Thread.sleep(80);
-                        System.out.print(" .");
+                        System.out.println("█▒▒▒▒▒▒▒▒▒\n");
+                        Thread.sleep(150);
+                        System.out.print("25%\n" +
+                                "███▒▒▒▒▒▒▒\n");
+                        Thread.sleep(150);
+                        System.out.print("\n" +
+                                "50%\n" +
+                                "█████▒▒▒▒▒\n");
+                        Thread.sleep(150);
+                        System.out.print("75%\n" +
+                                "███████▒▒▒\n" +
+                                "\n");
+                        Thread.sleep(150);
+                        System.out.print("100%\n" +
+                                "██████████ \n");
+                        Thread.sleep(150);
+                        System.out.print("");
                         System.out.println("set location:");
-
                         System.out.println("[aufzug],[tavorraum],[gang1],[sumatra],[küche],[gang2],[hr]," +
-                                "[treppenhaus],[markusplatz],[glaskasten],[getränkelager],[kickerraum],[dach],[edeka]");
+                                "[treppenhaus],\n[markusplatz],[glaskasten],[getränkelager],[kickerraum],[dach]," +
+                                "[edeka]");
 
                         String tpRaum = scanner.nextLine();
                         switch (tpRaum) {
@@ -170,12 +177,13 @@ public class Basement {
                                         "greift nach einem schweren\n " +
                                         "Schraubenschlüssel und geht damit auf dich los");
                                 Thread.sleep(1000);
-                                System.out.println("du spürst einen stechenden Schmerz am Kopf, bevor dir schwarz " +
-                                        "vor Augen wird bemerkst du noch wie du am Bein aus dem Zimmer geschleift wirst");
-                                GameState.liveCount = 0;
-                                Leben.showLives(0);
-                                GameStart start = new GameStart();
-                                start.run();
+                                System.out.println("du spürst einen stechenden Schmerz am Kopf. Bevor dir schwarz " +
+                                        "vor Augen wird bemerkst\n du noch wie du am Bein aus dem Zimmer geschleift " +
+                                        "wirst und dir deine Schlüsselkarte entrissen wird");
+                                Leben.currentItems[0] = "⍰";
+                                GameState.firstTimeInElevator = true;
+                                GameState.hatSichSchonInElevatorUmgesehen = false;
+                                Elevator.startElevator();
                                 break;
                             case "dach":
                                 System.out.println("du spürst wie sich dein Körper demateralisiert und an einem " +

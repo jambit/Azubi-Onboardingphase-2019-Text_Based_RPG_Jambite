@@ -1,5 +1,7 @@
 package com.jambit;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Enemies {
     public static String quickAttack;
     public static String strongAttack;
@@ -287,12 +289,91 @@ public class Enemies {
         enemyAttack2 = "";
         enemyHealth = 150;
         trefferChance = 0.20f;
-        gegnerSchaden = 40;
+        gegnerSchaden = 30;
         xp = 1500;
         damageMod();
+
     }
 
+    void dieLooseStufe(){
+        gegnerAscii = "         __\n" +
+                "        / /\\\n" +
+                "       / /  \\\n" +
+                "      / /    \\__________\n" +
+                "     / /      \\        /\\\n" +
+                "    /_/        \\      / /\n" +
+                " ___\\ \\      ___\\____/_/_\n" +
+                "/____\\ \\    /___________/\\\n" +
+                "\\     \\ \\   \\           \\ \\\n" +
+                " \\     \\ \\   \\____       \\ \\\n" +
+                "  \\     \\ \\  /   /\\       \\ \\\n" +
+                "   \\   / \\_\\/   / /        \\ \\\n" +
+                "    \\ /        / /__________\\/\n" +
+                "     /        / /     /\n" +
+                "    /        / /     /\n" +
+                "   /________/ /\\    /\n" +
+                "   \\________\\/\\ \\  /\n" +
+                "               \\_\\/";
+        gegnerName = "Die loose Stufe";
+        nameNeu = gegnerName + "";
+        klasse = "Boss: ";
+        song = "dieLooseStufe";
+        quickAttack = "Sprung über die Stufe";
+        strongAttack = "Wurf ins Treppenhaus";
+        enemyAttack1 = "";
+        enemyAttack2 = "";
+        enemyHealth = 140;
+        trefferChance = 0.20f;
+        gegnerSchaden = 15;
+        xp = 2000;
+        damageMod();
 
+    }
+
+    void dieGetraenkenixe(){
+        gegnerAscii = "                                                   .''''.\n" +
+                "                                                  /,.--. )\n" +
+                "                             .'``.        __   __((\\- -(\\)\n" +
+                "                    _______.'     \\_.-''''  ``'  /)) - .\\|\n" +
+                "   __....::::::::::'''''''/    .   \\'''''''::::::(/ `-'`.)\n" +
+                ".:'::.  .  o ~ .  ~  o ~ /    /     '.o ~ . _.....--- `  \\\n" +
+                " ':. ':::::.___.____,___/   ,'_\\      \\ _.-'___..___..._,'\n" +
+                "   ':.  o~  `::::::::::::::::::::::::::::::::::::::::'  (\\\n" +
+                "    `':.  o ~  o   ..   o  ,  ~  \\ . o~   -.  ~   .'.:'\\'(\n" +
+                "       ':.  ,..   o  ~   o  . ,  'o.    ~ o   ~ o'.:'  \\(/\n" +
+                "         '.   o   ~   .    ~    o ~ ',o :  :  .' .' ('\\/ |\n" +
+                "           '-._    ~    o  , o  ,  .  ~._ _.o_.-'  \\/ ) (\n" +
+                "               '- .._  .    ~    ~      _.. -'\n" +
+                "                     ''' - .,.,. - '''\n" +
+                "                          (:' .:)\n" +
+                "                           :| '|\n" +
+                "                           |. ||\n" +
+                "                           || :|\n" +
+                "                           :| |'\n" +
+                "                           || :|\n" +
+                "                           '| ||\n" +
+                "                           |: ':\n" +
+                "                           || :|\n" +
+                "                     __..--:| |'--..__\n" +
+                "               _...-'  _.' |' :| '.__ '-..._\n" +
+                "             / -  ..---    '''''   ---...  _ \\\n" +
+                "             \\  _____  ..--   --..     ____  /\n" +
+                "              '-----....._________.....-----'";
+        gegnerName = "Die Getränkenixe";
+        nameNeu = gegnerName + "";
+        klasse = "Boss: ";
+        song = "Getränkenixe";
+        quickAttack = "Attack1";
+        strongAttack = "Attack2";
+        enemyAttack1 = "";
+        enemyAttack2 = "";
+        enemyHealth = 100;
+        trefferChance = 0.20f;
+        gegnerSchaden = 15;
+        xp = 1500;
+        damageMod();
+
+    }
     void damageMod() {
         if (GameState.difficulty == "leicht") {
             gegnerSchaden = (int) (gegnerSchaden * 0.75);

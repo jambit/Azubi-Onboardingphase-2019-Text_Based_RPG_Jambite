@@ -9,6 +9,8 @@ public class Corridor1 {
     public static void startCorridor1() throws Exception {
         Music.sequencer.stop();
         //TODO add music
+        Music corridor1Music = new Music();
+        corridor1Music.run("corridor1Music");
 
         System.out.println("\n" + " _____________________________________________\n" +
                 "|.'',                                     ,''.|\n" +

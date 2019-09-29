@@ -24,5 +24,6 @@ public class GameState {
     public static boolean cherry1Dead = false;
     public static boolean spiderDead = false;
     public static boolean hrPotionsGot = false;
+    public static boolean almaDead = false;
 
 }

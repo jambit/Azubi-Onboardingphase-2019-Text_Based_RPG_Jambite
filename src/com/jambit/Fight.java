@@ -92,6 +92,13 @@ public class Fight {
                         System.out.println("Dein Level: " + LevelSystem.playerLevel);
                         Music.sequencer.stop();
                         Thread.sleep(1000);
+                        float lootChance = r.nextFloat();
+                        if(lootChance <= 0.30){
+                            Integer zahl = Bag.tasche.get("Heiltrank");
+                            Bag.tasche.replace("Heiltrank", zahl + 2);
+                            System.out.println("Bei den Überbleibseln des Gegners findest du {2 Heiltränke}");
+                            Thread.sleep(4000);
+                        }
                         leaveFightWin();
                     }
 
@@ -379,6 +386,7 @@ public class Fight {
                 break;
             case "TAVorraum":
                 TApreroom.startTAPreroom();
+                GameState.almaDead = true;
                 break;
             case "Aufzug":
                 Elevator elevator = new Elevator();
@@ -397,6 +405,7 @@ public class Fight {
             case "HR":
                 HR.startHR();
                 GameState.spiderDead = true;
+                GameState.currentItems[4] = "\uD83D\uDD77";
                 break;
             case "Treppenhaus":
                 Stairs.startStairs();

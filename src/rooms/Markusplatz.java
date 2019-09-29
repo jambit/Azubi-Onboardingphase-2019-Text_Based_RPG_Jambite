@@ -12,6 +12,7 @@ public class Markusplatz {
         //TODO add music!
         Music markusplatzMusic = new Music();
         markusplatzMusic.run("markusplatzMusic");
+        System.out.println("Du befindest dich beim Markusplatz.");
 
         boolean inRoom = true;
         Cherry cherry = new Cherry();
@@ -27,61 +28,62 @@ public class Markusplatz {
                 case "umsehen":
                     System.out.println("Es führt ein gang nach links und einer nach rechts.\n");
                     if (GameState.printerIsDead == false) {
-                        Thread.sleep(1000);
+                        Thread.sleep(4000);
                         System.out.println("Zunächst fällt dir nichts weiter auf doch bei genauerem hinsehen entdeckst du einige ");
                         System.out.println("verdächtige Tinten Spuren, die allesamt zum Drucker zu führen scheinen.");
-                        Thread.sleep(1000);
+                        Thread.sleep(4000);
                         System.out.println("[spuren untersuchen]");
-                        Thread.sleep(1000);
+                        Thread.sleep(4000);
                     }
-                    if (!Weapons.foundWeapons.contains("kugelschreiber")){
+                    if (!Weapons.foundWeapons.contains("kugelschreiber")) {
                         System.out.println("\n Desweiteren bemerkst du in einer der Ecken ein leichtes silbernes glitzern.");
-                        Thread.sleep(1000);
+                        Thread.sleep(4000);
                         System.out.println("[glitzern untersuchen]");
-                        Thread.sleep(1000);
+                        Thread.sleep(4000);
                     }
-                    if (Weapons.foundWeapons.contains("kugelschreiber") && GameState.printerIsDead == true){
+                    if (Weapons.foundWeapons.contains("kugelschreiber") && GameState.printerIsDead == true) {
                         System.out.println("Du bermerkst weiter nichts besonderes.");
-                        Thread.sleep(1000);
+                        Thread.sleep(4000);
                     }
 
                     break;
                 case "spuren untersuchen":
-                    if (GameState.printerIsDead == false){
+                    if (GameState.printerIsDead == false) {
                         System.out.println("Während du dich langsam auf den Drucker zu bewegst hörst du ein leises Grummeln, ");
-                        Thread.sleep(1000);
                         System.out.println("das immer lauter zu werden scheint.");
-                        Thread.sleep(1000);
+                        Thread.sleep(4000);
                         System.out.println("Plötzlich, als du schon fast vor ihm stehst, macht er einen einen kleinen Sprung nach vorne ");
-                        Thread.sleep(1000);
                         System.out.println("und greift dich an.\n");
-                        Thread.sleep(1000);
+                        Thread.sleep(4000);
                         kampf.kampf("drucker");
-                    }
-                    else{
+                    } else {
                         System.out.println("Viel toter scheint der Drucker nicht zu werden.");
                     }
                     break;
                 case "glitzern untersuchen":
-                    if(GameState.printerIsDead == false){
+                    if (GameState.printerIsDead == false) {
                         System.out.println("Als du dich näher auf das Glitzern zu bewegen willst, dreht sich der Drucker in deine Richtung ");
                         System.out.println("und greift dich an.\n");
                         kampf.kampf("drucker");
                     }
-                    if(GameState.printerIsDead == true){
+                    if (GameState.printerIsDead == true) {
                         System.out.println("Du bewegst dich auf das glitzernde Objekt zu.");
+                        Thread.sleep(4000);
                         System.out.println("Es stellt sich heraus das das glitzern von einem alten Schreibobjekt aus längst vergessenen Zeiten ausgeht.");
+                        Thread.sleep(4000);
                         System.out.println("Der Stift trägt die Inschrift \"Jambit\".");
-                        System.out.println("Du hebst ihn auf. Dir erscheint es als ob eine große Macht von ihm ausgeht.");
+                        Thread.sleep(4000);
+                        System.out.println("Du hebst ihn auf. Dir erscheint als ob eine große Macht von ihm ausgeht.");
+                        Thread.sleep(4000);
                         Weapons.weaponFound("kugelschreiber");
                         System.out.println("Möchtest du ihn ausrüsten?");
+                        Thread.sleep(2000);
                         System.out.println("[ja]/[nein]");
                         String choice = scanner.nextLine();
-                        if(choice.equals("ja")){
+                        if (choice.equals("ja")) {
                             Weapons.currentWeapon = "kugelschreiber";
                             waffen.switchWeapon();
-                        }
-                        else{
+                        } else {
                             break;
                         }
                     }

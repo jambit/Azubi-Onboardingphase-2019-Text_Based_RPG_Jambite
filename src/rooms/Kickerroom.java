@@ -11,7 +11,7 @@ public class Kickerroom {
         Music.sequencer.stop();
         //TODO add music
         Music kickerroomMusic = new Music();
-        kickerroomMusic.run("fishtankMusic");
+        kickerroomMusic.run("kickerroomMusic");
 
         boolean inRoom = true;
         Cherry cherry = new Cherry();
@@ -28,7 +28,8 @@ public class Kickerroom {
                     System.out.println("Es scheint nicht sehr ratsam sie zu [unterbrechen].");
                     break;
                 case "unterbrechen":
-                    System.out.println("Sämtliche");
+                    System.out.println("WER WAGT ES UNS BEI UNSEREM HEILIGEN RITUAL ZU UNTERBRECHEN!!!");
+                    Thread.sleep(3000);
                     Fight kampf = new Fight();
                     kampf.kampf("kicker");
                     break;

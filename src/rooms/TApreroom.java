@@ -1,8 +1,6 @@
 package rooms;
-import com.jambit.Cherry;
-import com.jambit.Constants;
-import com.jambit.GameState;
-import com.jambit.RoomsOptions;
+import com.jambit.*;
+
 import java.util.Scanner;
 
 public class TApreroom {
@@ -34,12 +32,20 @@ public class TApreroom {
         System.out.println("");
         System.out.println("du befindest dich im TA Vorraum");
         boolean inRoom = true;
+        Fight kampf = new Fight();
         Cherry cherry = new Cherry();
         cherry.summonCherry();
         while (inRoom) {
             GameState.whereAmI = Constants.TAPREROOM;
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
+            if(GameState.almaDead == false && GameState.currentItems[4] == "\uD83D\uDD77"){
+                System.out.println("Alma: Was hast du da?");
+                System.out.println("Alma: I Is Ist das etwa mei meine Spinne?");
+                System.out.println("Alma: WAS HAST DU MIT IHM GEMACHT!?!\n");
+                kampf.kampf("");
+            }
+
             switch (input) {
                 case "rechts gehen":
                     System.out.println("du gehst in den Gang");

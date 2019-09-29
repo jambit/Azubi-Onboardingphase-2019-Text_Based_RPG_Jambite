@@ -26,8 +26,10 @@ public class HR {
                 case "umsehen":
                     System.out.println("Dieser Raum hat keinen weiteren ausgang.");
                     System.out.println("[zurück]");
+                    Thread.sleep(2000);
                     System.out.println("\nBis auf einen Schrank scheint der Raum leer zu sein.");
                     System.out.println("[durchsuchen]");
+                    Thread.sleep(2000);
                     break;
                 case "zurück":
                     Stairs.startStairs();
@@ -35,7 +37,9 @@ public class HR {
                 case "durchsuchen":
                     if(GameState.spiderDead == false) {
                         System.out.println("Du öffnest die erste Schranktür und siehst {3 Heiltränke}.");
+                        Thread.sleep(2000);
                         System.out.println("Du streckst deine Hand nach ihnen aus, ");
+                        Thread.sleep(2000);
                         System.out.println("doch bevor du sie erreichen kannst fällt eine Spinne von der Decke, direkt auf deine Hand.");
                         kampf.kampf("spinne");
                     }

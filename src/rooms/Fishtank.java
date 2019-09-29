@@ -11,7 +11,7 @@ public class Fishtank {
         Music.sequencer.stop();
         //TODO add music
         Music fishtankMusic = new Music();
-        fishtankMusic.run("fishatankMusic");
+        fishtankMusic.run("fishtankMusic");
 
         boolean inRoom = true;
         Cherry cherry = new Cherry();

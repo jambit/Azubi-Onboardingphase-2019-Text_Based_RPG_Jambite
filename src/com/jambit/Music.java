@@ -26,9 +26,6 @@ public class Music {
                 introMusic();
                 break;
             /*
-            case "küche":
-                kueche();
-                break;
             case "elevatorMusic":
                 elevatorMusic();
                 break;
@@ -194,17 +191,6 @@ public class Music {
         sequencer.start();
     }
 
-    void kuecheMusic() throws Exception {
-
-        sequencer.open();
-
-        InputStream is = new BufferedInputStream(new FileInputStream(new File("src/musik/.mid")));
-
-        sequencer.setSequence(is);
-
-        sequencer.start();
-    }
-
     void elevatorMusic() throws Exception {
 
         sequencer.open();
@@ -331,7 +317,7 @@ public class Music {
 
         sequencer.open();
 
-        InputStream is = new BufferedInputStream(new FileInputStream(new File("src/musik/.mid")));
+        InputStream is = new BufferedInputStream(new FileInputStream(new File("src/musik/maze.mid")));
 
         sequencer.setSequence(is);
 
@@ -419,7 +405,27 @@ public class Music {
 
         sequencer.open();
 
-        InputStream is = new BufferedInputStream(new FileInputStream(new File("src/musik/.mid")));
+        InputStream is = new BufferedInputStream(new FileInputStream(new File("src/musik/In_the_Cave.mid")));
+
+        sequencer.setSequence(is);
+
+        sequencer.start();
+    }
+    void alma() throws Exception {
+
+        sequencer.open();
+
+        InputStream is = new BufferedInputStream(new FileInputStream(new File("src/musik/town_of_witchwood.mid")));
+
+        sequencer.setSequence(is);
+
+        sequencer.start();
+    }
+    void cherry() throws Exception {
+
+        sequencer.open();
+
+        InputStream is = new BufferedInputStream(new FileInputStream(new File("src/musik/zombie_chase.mid")));
 
         sequencer.setSequence(is);
 

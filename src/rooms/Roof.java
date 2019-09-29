@@ -29,7 +29,7 @@ public class Roof {
                 case "springen":
                     System.out.println("du siehst wie die Stockwerke und dein Leben an dir vorbeirauschen und " +
                             "bereitest dich geistig auf den Aufprall vor");
-                    Thread.sleep(3);
+                    Thread.sleep(500);
                     GameState.liveCount=0;
                     Leben.showLives(0);
                     break;
@@ -44,7 +44,7 @@ public class Roof {
                             "═▂▄▄▓▄▄▂\n" +
                             "◢◤ █▀▀████▄▄▄▄◢◤      \n" +
                             "█▄ █ーJ ███▀▀▀▀▀▀▀╬ ");
-                    System.out.println("du steigst in den Hubschrauber ein und entkommst dem Alptraum");
+                    System.out.println("du steigst in den Hubschrauber ein und entkommst dem Albtraum");
                     System.out.println();
 
 

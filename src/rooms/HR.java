@@ -15,7 +15,7 @@ public class HR {
 
         boolean inRoom = true;
         while (inRoom) {
-            GameState.whereAmI = Constants.STARIS;
+            GameState.whereAmI = Constants.HR;
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
             switch (input) {

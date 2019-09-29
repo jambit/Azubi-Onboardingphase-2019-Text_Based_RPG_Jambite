@@ -16,7 +16,7 @@ public class Kitchen {
 
         boolean inRoom = true;
         while (inRoom) {
-            GameState.whereAmI = Constants.ELEVATOR;
+            GameState.whereAmI = Constants.KITCHEN;
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
             switch (input) {

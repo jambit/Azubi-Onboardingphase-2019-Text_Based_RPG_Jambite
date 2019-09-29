@@ -15,7 +15,7 @@ public class Markusplatz {
 
         boolean inRoom = true;
         while (inRoom) {
-            GameState.whereAmI = Constants.ELEVATOR;
+            GameState.whereAmI = Constants.MARKUSPLATZ;
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
             Fight kampf = new Fight();

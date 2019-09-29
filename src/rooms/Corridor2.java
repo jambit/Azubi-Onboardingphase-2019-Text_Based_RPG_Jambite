@@ -37,7 +37,7 @@ public class Corridor2 {
         System.out.println("\nDu befindest dich im Gang2");
         boolean inRoom = true;
         while (inRoom) {
-            GameState.whereAmI = Constants.DRINKSSTORRAGE;
+            GameState.whereAmI = Constants.CORRIDOR2;
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
             switch (input) {

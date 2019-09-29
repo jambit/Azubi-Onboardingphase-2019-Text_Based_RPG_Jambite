@@ -15,7 +15,7 @@ public class Kickerroom {
 
         boolean inRoom = true;
         while (inRoom) {
-            GameState.whereAmI = Constants.FISHTANK;
+            GameState.whereAmI = Constants.KICKERROOM;
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
             switch (input) {

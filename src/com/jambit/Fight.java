@@ -24,6 +24,9 @@ public class Fight {
                 gegner.tobi();
                 intFight();
                 break;
+            case "spinne":
+                gegner.almasSpider();
+                intFight();
             case "drucker":
                 gegner.printer();
                 intFight();
@@ -52,7 +55,7 @@ public class Fight {
                 gegner.dieLooseStufe();
                 intFight();
                 break;
-            case "trianle":
+            case "triangle":
                 gegner.triangle();
                 intFight();
                 break;
@@ -73,7 +76,7 @@ public class Fight {
         while (true) {
             System.out.println("Gegner HP: " + Enemies.enemyHealth);
             System.out.println("Deine HP: " + inFightHP);
-            System.out.println("\n[1]" + Enemies.quickAttack + "\n[2]" + Enemies.strongAttack + "\n[3]" + Enemies.attack3 + "\n[4]Zurück");
+            System.out.println("\n[1]" + Enemies.quickAttack + "\n[2]" + Enemies.strongAttack + "\n[3]Zurück");
             System.out.println("Auswahl: ");
             int auswahl = kampfAuswahl.nextInt();
 
@@ -275,14 +278,23 @@ public class Fight {
             Thread.sleep(500);
             System.out.println("\nAuswahl: ");
             int wählen = kampfAuswahl.nextInt();
-            if (wählen == 1) {
-                inFightHP = inFightHP + 25;
-                Integer zahl = Bag.tasche.get("Heiltrank");
-                Bag.tasche.replace("Heiltrank", zahl - 1);
-                System.out.println("Aktuelle HP: " + inFightHP);
-                Thread.sleep(500);
-                fightSystem();
-            } else if (wählen == 2) {
+            Integer nummer = Bag.tasche.get("Heiltrank");
+
+            if(nummer > 0) {
+                if (wählen == 1) {
+                    inFightHP = inFightHP + 25;
+                    Integer zahl = Bag.tasche.get("Heiltrank");
+                    Bag.tasche.replace("Heiltrank", zahl - 1);
+                    System.out.println("Aktuelle HP: " + inFightHP);
+                    Thread.sleep(500);
+                    fightSystem();
+                } else if (wählen == 2) {
+                    fightSystem();
+                }
+            }
+            else {
+                System.out.println("Nicht genügend Heiltränke.");
+                Thread.sleep(1500);
                 fightSystem();
             }
         } else if (wahlGürtel == 1) {
@@ -384,6 +396,7 @@ public class Fight {
                 break;
             case "HR":
                 HR.startHR();
+                GameState.spiderDead = true;
                 break;
             case "Treppenhaus":
                 Stairs.startStairs();

@@ -22,5 +22,7 @@ public class GameState {
     public static boolean kitchenSearched = false;
     public static boolean printerIsDead = false;
     public static boolean cherry1Dead = false;
+    public static boolean spiderDead = false;
+    public static boolean hrPotionsGot = false;
 
 }

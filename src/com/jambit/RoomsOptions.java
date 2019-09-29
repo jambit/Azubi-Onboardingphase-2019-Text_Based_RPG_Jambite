@@ -42,6 +42,10 @@ public class RoomsOptions {
             case "/add xp":
                 System.out.println();
                 Functions.addXp();
+                break;
+            case "/gegner":
+                gegner();
+                break;
             default:
                 break;
         }
@@ -103,6 +107,16 @@ public class RoomsOptions {
             }
         }
 
+    }
+
+    public static void gegner() throws Exception {
+        while (true) {
+            Scanner wahl = new Scanner(System.in);
+            System.out.println("Gegnerwahl: ");
+            String auswahl = wahl.nextLine();
+            Fight kampf = new Fight();
+            kampf.kampf(auswahl);
+        }
     }
 
     public static void addLive() throws InterruptedException, IOException {

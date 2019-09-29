@@ -37,7 +37,7 @@ public class Kitchen {
 
                 case "durchsuchen":
                     if(GameState.kitchenSearched == false){
-                        System.out.println("Du durchsuchst sämtliche Schränke und findest: \n[2 Heiltränke]!");
+                        System.out.println("Du durchsuchst sämtliche Schränke und findest: \n{2 Heiltränke}!");
                         Integer zahl = Bag.tasche.get("Heiltrank");
                         Bag.tasche.replace("Heiltrank", zahl + 2);
 

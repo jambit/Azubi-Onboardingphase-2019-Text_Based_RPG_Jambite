@@ -41,6 +41,7 @@ public class Enemies {
                         "\n";
         gegnerName = "Tobi";
         klasse = "Gegner: ";
+        nameNeu = gegnerName + "                   ";
         song = "tobi";
         quickAttack = "Acid Attack";
         strongAttack = "Weitwurf";
@@ -71,6 +72,7 @@ public class Enemies {
                 " jgs         '----'";
         gegnerName = "Janomom";
         klasse = "Gegner: ";
+        nameNeu = gegnerName + "                ";
         song = "yannik";
         quickAttack = "Zigaretten klauen";
         strongAttack = "Alkohol-Entzug";
@@ -126,7 +128,7 @@ public class Enemies {
                 "  \\ \\ |________| / /";
 
         gegnerName = "Badgeloser";
-        nameNeu = gegnerName + "            ";
+        nameNeu = gegnerName + "             ";
         song = "badgeloser";
         klasse = "Gegner: ";
         quickAttack = "Am Ohr herausziehen";
@@ -160,8 +162,8 @@ public class Enemies {
                 "            \\/    .' .-'.-'  .-' .-'\n" +
                 "                .-'.' .'  .' .-'\n";
         gegnerName = "Adalbert";
-        nameNeu = gegnerName + "";
         klasse = "Boss: ";
+        nameNeu = gegnerName + "                 ";
         song = "adal";
         quickAttack = "Spezi Klauen";
         strongAttack = "Kicker-Verbot";
@@ -195,8 +197,8 @@ public class Enemies {
                 "                            ████████                                                    \n" +
                 "                                                                 ";
         gegnerName = "Cherry";
-        nameNeu = gegnerName + "";
         klasse = "Boss: ";
+        nameNeu = gegnerName + "                   ";
         song = "cherry1";
         quickAttack = "Deep-Talk";
         strongAttack = "Kuchen-Mail";
@@ -249,7 +251,7 @@ public class Enemies {
                 "                         '/                             \n" +
                 "                         \"==    ";
         gegnerName = "Kickermonster";
-        nameNeu = gegnerName + "";
+        nameNeu = gegnerName + "            ";
         klasse = "Boss: ";
         song = "";
         quickAttack = "Pass";
@@ -260,6 +262,35 @@ public class Enemies {
         trefferChance = 0.30f;
         gegnerSchaden = 30;
         xp = 7000;
+        damageMod();
+    }
+    void almasSpider() {
+        gegnerAscii = "              (\n" +
+                "               )\n" +
+                "              (\n" +
+                "        /\\  .-\"\"\"-.  /\\\n" +
+                "       //\\\\/  ,,,  \\//\\\\\n" +
+                "       |/\\| ,;;;;;, |/\\|\n" +
+                "       //\\\\\\;-\"\"\"-;///\\\\\n" +
+                "      //  \\/   .   \\/  \\\\\n" +
+                "     (| ,-_| \\ | / |_-, |)\n" +
+                "       //`__\\.-.-./__`\\\\\n" +
+                "      // /.-(() ())-.\\ \\\\\n" +
+                "     (\\ |)   '---'   (| /)\n" +
+                "      ` (|           |) `\n" +
+                "        \\)           (/";
+        gegnerName = "Almas Spinne";
+        nameNeu = gegnerName + "           ";
+        klasse = "Gegner: ";
+        song = "";
+        quickAttack = "";
+        strongAttack = "";
+        enemyAttack1 = "";
+        enemyAttack2 = "";
+        enemyHealth = 60;
+        trefferChance = 0.50f;
+        gegnerSchaden = 10;
+        xp = 1000;
         damageMod();
     }
 
@@ -282,6 +313,7 @@ public class Enemies {
                 "            \\/_____________________/";
         gegnerName = "Dreieck";
         klasse = "Gegner: ";
+        nameNeu = gegnerName + "               ";
         song = "yannik";
         quickAttack = "die Ecke falten";
         strongAttack = "rollen";
@@ -315,7 +347,7 @@ public class Enemies {
                 "   \\________\\/\\ \\  /\n" +
                 "               \\_\\/";
         gegnerName = "Die loose Stufe";
-        nameNeu = gegnerName + "";
+        nameNeu = gegnerName + "          ";
         klasse = "Boss: ";
         song = "dieLooseStufe";
         quickAttack = "Sprung über die Stufe";

@@ -68,7 +68,14 @@ public class Dialog {
         System.out.println("This is a work of fiction. Names, characters, places and incidents either are products of" +
                 " the author’s imagination or are used fictitiously. Any resemblance to actual events or locales or " +
                 "persons, living or dead, is entirely coincidental.");
+
+        System.out.println("DISCLAIMER!!!");
         System.out.println("NO DOGS WERE HARMED DURING THE MAKING OF THIS GAME. THE CAT GOT SICK AND SOMEBODY SHOT" +
                 " A DUCK BUT THAT'S ABOUT IT.");
+
+        System.out.println("no thanks whatsoever to xyz");
+
+        System.out.println("special thanks to Cherry, Jannik, David, ... for dealing with some errors we had clearing" +
+                " our back during the stressful days before our release");
     }
 }

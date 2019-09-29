@@ -13,6 +13,8 @@ public class Edeka {
         edekaMusic.run("edekaMusic");
 
         boolean inRoom = true;
+        Cherry cherry = new Cherry();
+        cherry.summonCherry();
         while (inRoom) {
             GameState.whereAmI = Constants.EDEKA;
             Scanner scanner = new Scanner(System.in);

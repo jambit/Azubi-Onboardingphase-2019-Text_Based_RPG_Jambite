@@ -14,6 +14,8 @@ public class Street {
 //        fishtankMusic.run("fishatankMusic");
 
         boolean inRoom = true;
+        Cherry cherry = new Cherry();
+        cherry.summonCherry();
         while (inRoom) {
             GameState.whereAmI = Constants.STREET;
             Scanner scanner = new Scanner(System.in);

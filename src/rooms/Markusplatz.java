@@ -14,6 +14,8 @@ public class Markusplatz {
         markusplatzMusic.run("markusplatzMusic");
 
         boolean inRoom = true;
+        Cherry cherry = new Cherry();
+        cherry.summonCherry();
         while (inRoom) {
             GameState.whereAmI = Constants.MARKUSPLATZ;
             Scanner scanner = new Scanner(System.in);

@@ -14,6 +14,8 @@ public class Fishtank {
         fishtankMusic.run("fishatankMusic");
 
         boolean inRoom = true;
+        Cherry cherry = new Cherry();
+        cherry.summonCherry();
         while (inRoom) {
             GameState.whereAmI = Constants.FISHTANK;
             Scanner scanner = new Scanner(System.in);

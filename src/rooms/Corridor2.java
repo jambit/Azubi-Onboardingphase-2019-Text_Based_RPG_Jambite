@@ -36,6 +36,8 @@ public class Corridor2 {
 
         System.out.println("\nDu befindest dich im Gang2");
         boolean inRoom = true;
+        Cherry cherry = new Cherry();
+        cherry.summonCherry();
         while (inRoom) {
             GameState.whereAmI = Constants.CORRIDOR2;
             Scanner scanner = new Scanner(System.in);

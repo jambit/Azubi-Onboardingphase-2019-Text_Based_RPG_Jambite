@@ -14,6 +14,8 @@ public class Roof {
         roofMusic.run("roofMusic");
 
         boolean inRoom = true;
+        Cherry cherry = new Cherry();
+        cherry.summonCherry();
         while (inRoom) {
             GameState.whereAmI = Constants.ROOF;
             Scanner scanner = new Scanner(System.in);

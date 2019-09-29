@@ -14,6 +14,8 @@ public class HR {
         hRMusic.run("hRMusic");
 
         boolean inRoom = true;
+        Cherry cherry = new Cherry();
+        cherry.summonCherry();
         while (inRoom) {
             GameState.whereAmI = Constants.HR;
             Scanner scanner = new Scanner(System.in);

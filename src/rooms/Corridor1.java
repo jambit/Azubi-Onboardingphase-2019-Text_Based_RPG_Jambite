@@ -39,6 +39,8 @@ public class Corridor1 {
         System.out.println("Du siehtst einen langen Gang von dem rechts die Küche abzweigt [rechts gehen] \n" +
                 "links vom Gang befindet sich der TA Vorraum [links gehen]\n" +
                 "und am Ende des Ganges befindet sich der \"Markusplatz\" [vor gehen]");
+        Cherry cherry = new Cherry();
+        cherry.summonCherry();
         while (inRoom) {
             GameState.whereAmI = Constants.CORRIDOR1;
             Scanner scanner = new Scanner(System.in);

@@ -8,7 +8,7 @@ public class Cherry {
     Fight kampf = new Fight();
     Scanner scanner = new Scanner(System.in);
 
-    void summonCherry() throws Exception {
+    public void summonCherry() throws Exception {
 
 
         float chance = r.nextFloat();

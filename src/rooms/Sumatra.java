@@ -38,6 +38,8 @@ public class Sumatra {
                 "\n");
 
         boolean inRoom = true;
+        Cherry cherry = new Cherry();
+        cherry.summonCherry();
         System.out.println();
         System.out.println("Du befindest dich im Raum Sumatra\n" +
                 "rechts befindet sich der TA Vorraum [rechts gehen]");

@@ -14,6 +14,8 @@ public class Kickerroom {
         kickerroomMusic.run("fishtankMusic");
 
         boolean inRoom = true;
+        Cherry cherry = new Cherry();
+        cherry.summonCherry();
         while (inRoom) {
             GameState.whereAmI = Constants.KICKERROOM;
             Scanner scanner = new Scanner(System.in);

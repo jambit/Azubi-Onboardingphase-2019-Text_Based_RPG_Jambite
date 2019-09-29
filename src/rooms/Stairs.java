@@ -34,10 +34,12 @@ public class Stairs {
                 "      \"Ya8          Normand Veilleux        8\n" +
                 "        \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n");
         System.out.println("\nDu befindest dich im Treppenhaus");
-        System.out.printf("Rechts befindet sich der Gang1 [rechts gehen]");
-        System.out.printf("Links befindt sich die HR Abteilung [links gehen]");
+        System.out.printf("Rechts befindet sich der Gang aus dem du gerade kamst [rechts gehen]");
+        System.out.printf("Links befindet sich die HR Abteilung [links gehen]");
 
         boolean inRoom = true;
+        Cherry cherry = new Cherry();
+        cherry.summonCherry();
         while (inRoom) {
             GameState.whereAmI = Constants.STARIS;
             Scanner scanner = new Scanner(System.in);
@@ -54,7 +56,7 @@ public class Stairs {
                     if (randomNumber < 0.5) {
                         System.out.printf("");
                         System.out.printf("als du auf die erste Stufe trittst löst sich diese und dein Bein wird " +
-                                "eingeklemmt.\nDie Stufe die sich gelöst hat faltet sich zu einem angsteiflößenden Geblide zusammen und greit dich an.");
+                                "eingeklemmt.\nDie Stufe die sich gelöst hat faltet sich zu ein angsteiflößenden Gebilde zusammen und greit dich an.");
                         Fight fight = new Fight();
                         fight.kampf("dieLooseStufe");
                     }

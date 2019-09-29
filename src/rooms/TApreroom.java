@@ -1,4 +1,5 @@
 package rooms;
+import com.jambit.Cherry;
 import com.jambit.Constants;
 import com.jambit.GameState;
 import com.jambit.RoomsOptions;
@@ -33,6 +34,8 @@ public class TApreroom {
         System.out.println("");
         System.out.println("du befindest dich im TA Vorraum");
         boolean inRoom = true;
+        Cherry cherry = new Cherry();
+        cherry.summonCherry();
         while (inRoom) {
             GameState.whereAmI = Constants.TAPREROOM;
             Scanner scanner = new Scanner(System.in);

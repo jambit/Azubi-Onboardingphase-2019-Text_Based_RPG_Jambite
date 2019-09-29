@@ -14,6 +14,8 @@ public class Drinksstorage {
         drinksstorageMusic.run("drinksstorageMusic");
 
         boolean inRoom = true;
+        Cherry cherry = new Cherry();
+        cherry.summonCherry();
         while (inRoom) {
             GameState.whereAmI = Constants.DRINKSSTORRAGE;
             Scanner scanner = new Scanner(System.in);

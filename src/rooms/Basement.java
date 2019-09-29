@@ -12,6 +12,8 @@ public class Basement {
         //TODO add music
         Music basementMusic = new Music();
         basementMusic.run("basementMusic");
+        Cherry cherry = new Cherry();
+        cherry.summonCherry();
 
         System.out.println("        __..---'''---...___\n" +
                 "              .'     Teleporter    '.\n" +

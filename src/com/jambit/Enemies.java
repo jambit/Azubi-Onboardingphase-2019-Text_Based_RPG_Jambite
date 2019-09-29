@@ -283,8 +283,8 @@ public class Enemies {
         nameNeu = gegnerName + "           ";
         klasse = "Gegner: ";
         song = "";
-        quickAttack = "";
-        strongAttack = "";
+        quickAttack = "Netz durchschneiden";
+        strongAttack = "Bein ausreißen";
         enemyAttack1 = "";
         enemyAttack2 = "";
         enemyHealth = 60;

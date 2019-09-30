@@ -13,6 +13,9 @@ public class Drinksstorage {
         Music drinksstorageMusic = new Music();
         drinksstorageMusic.run("drinksstorageMusic");
 
+        System.out.println("\nDu befindest dich im Getränkelager. Rechts befindet sich der Glaskasten [rechts gehen]," +
+                "\n links befindet sich der Aufzug [links gehen] und geradeaus befindet sich der Aufzug [vor gehen]\n");
+
         boolean inRoom = true;
         Cherry cherry = new Cherry();
         cherry.summonCherry();
@@ -33,10 +36,14 @@ public class Drinksstorage {
                     break;
                 case "untersuchen":
                     System.out.println("Eine wunderschöne aber zugleich groteske Kreatur greift dich an");
+                    Fight fight = new Fight();
+                    fight.kampf("dieGetränkenixe");
 
-
-                case "links gehen":
+                case "vor gehen":
                     Kitchen.startKitchen();
+                    break;
+                case "links gehen":
+                    Elevator.startElevator();
                     break;
                 case "durchsuchen":
                     System.out.println("\nDu durchsuchst alle Kästen und findest tatsächlich noch eine flasche Spezi \uD83C\uDF7E");
@@ -44,7 +51,7 @@ public class Drinksstorage {
                     String yesNo = scanner.nextLine();
                     if (yesNo.equals("ja")) {
                         System.out.println("Du nimmst die Spezi mit");
-                        Leben.currentItems[2] = "🍾";
+                        GameState.currentItems[2] = "🍾";
                         Leben.statusLeiste();
                     } else {
                         System.out.println("Du lässt die Spezi liegen");

@@ -12,7 +12,7 @@ public class Markusplatz {
         //TODO add music!
         Music markusplatzMusic = new Music();
         markusplatzMusic.run("markusplatzMusic");
-        System.out.println("Du befindest dich beim Markusplatz.");
+        System.out.println("Du befindest dich auf dem Markusplatz");
 
         boolean inRoom = true;
         Cherry cherry = new Cherry();

@@ -37,8 +37,15 @@ public class Intro {
         for (int i = 0; i <= 40; i++) {
             System.out.println("");
         }
+        System.out.println("");
         System.out.println("Gib \"help\" für hilfe ein.");
         System.out.println("");
+        System.out.println("[umsehen] ist in jedem Raum eine große Hilfe um versteckte Gegenstände und Funktionen zu " +
+                "entdecken");
+        System.out.println("mit [\"richtung\" + gehen] kannst du in einen anliegenden Raum gehen\n");
+        System.out.println("das Spielziel ist einen hohen Highscore zu erreichen und dann auf dem Dach oder der " +
+                "\nStraße einen Evacuation Point zu erreichen und dem Alptraum zu entfliehen.");
+        System.out.println();
         System.out.println("Press enter to continue");
         System.in.read();
 

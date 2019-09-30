@@ -12,7 +12,7 @@ public class Kitchen {
         //TODO add music
         Music kitchenMusic = new Music();
         kitchenMusic.run("kitchenMusic");
-        System.out.println("\nDu befindest dich in der Küche!");
+        System.out.println("\nDu befindest dich in der Küche");
 
         boolean inRoom = true;
         Cherry cherry = new Cherry();

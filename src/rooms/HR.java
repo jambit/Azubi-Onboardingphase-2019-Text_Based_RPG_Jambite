@@ -13,6 +13,8 @@ public class HR {
         Music hRMusic = new Music();
         hRMusic.run("hRMusic");
 
+        System.out.println("Du befindest dich in der HR Abteilung");
+
         boolean inRoom = true;
         Cherry cherry = new Cherry();
         cherry.summonCherry();

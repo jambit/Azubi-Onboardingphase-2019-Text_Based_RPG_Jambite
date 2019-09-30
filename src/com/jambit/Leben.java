@@ -6,9 +6,9 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Leben {
-    public static int liveCount;
-    public static int xp = 0;
-    public static String[] currentItems = {"⍰", "⍰", "⍰", "⍰", "⍰", "⍰", "⍰", "⍰"};
+//    public static int liveCount;
+//    public static int xp = 0;
+//    public static String[] currentItems = {"⍰", "⍰", "⍰", "⍰", "⍰", "⍰", "⍰", "⍰"};
 
 
     public void addLive() throws InterruptedException, IOException {
@@ -59,6 +59,7 @@ public class Leben {
                         "╚██████╔╝██║  ██║██║ ╚═╝ ██║███████╗    ╚██████╔╝ ╚████╔╝ ███████╗██║  ██║\n" +
                         " ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝     ╚═════╝   ╚═══╝  ╚══════╝╚═╝  ╚═╝" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n");
                 Thread.sleep(1000);
+                SaveGame.setHighscore();
                 System.out.println("your highscore is " + GameState.xp);
                 Thread.sleep(5000);
                 System.out.println("do you want to see the local highscores? [yes] [no]");

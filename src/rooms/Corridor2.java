@@ -46,7 +46,7 @@ public class Corridor2 {
 
                 case "umsehen":
                     System.out.println("Rechts befindet sich der Kickerraum [rechts gehen]");
-
+                    System.out.println("Links befindet sich das Treppenhaus [links gehen]");
                     break;
 
                 case "rechts gehen":
@@ -54,7 +54,7 @@ public class Corridor2 {
                     break;
 
                 case "links gehen":
-
+                    Stairs.startStairs();
                     break;
 
                 default:

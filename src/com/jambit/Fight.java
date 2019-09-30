@@ -411,6 +411,10 @@ public class Fight {
                 Stairs.startStairs();
                 break;
             case "Getränkelager":
+                GameState.currentItems[3]="\uD83D\uDD0B";
+                System.out.println("du erhälst eine glühende Batterie [\uD83D\uDD0B]\n");
+                Leben.statusLeiste();
+                Thread.sleep(1500);
                 Drinksstorage.startDrinksstorrage();
                 break;
             case "Keller":

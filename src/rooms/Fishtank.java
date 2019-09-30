@@ -13,6 +13,8 @@ public class Fishtank {
         Music fishtankMusic = new Music();
         fishtankMusic.run("fishtankMusic");
 
+        System.out.println("Du befindest dich im Glaskasten");
+        System.out.println("Rechts befindet sich das Getränkelager und links der Markusplatz");
         boolean inRoom = true;
         Cherry cherry = new Cherry();
         cherry.summonCherry();
@@ -31,7 +33,7 @@ public class Fishtank {
                     break;
 
                 case "links gehen":
-
+                    Markusplatz.startMarkusplatz();
                     break;
 
                 default:

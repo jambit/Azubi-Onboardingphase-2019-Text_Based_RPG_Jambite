@@ -12,6 +12,8 @@ public class Edeka {
         Music edekaMusic = new Music();
         edekaMusic.run("edekaMusic");
 
+        System.out.println("\nDu befindest dich im Edeka");
+
         boolean inRoom = true;
         Cherry cherry = new Cherry();
         cherry.summonCherry();
@@ -22,16 +24,13 @@ public class Edeka {
             switch (input) {
 
                 case "umsehen":
-
+                    System.out.println("Rechts befindet sich die Straße");
                     break;
 
                 case "rechts gehen":
-
+                    Street.startStreet();
                     break;
 
-                case "links gehen":
-                    Corridor1.startCorridor1();
-                    break;
 
                 default:
                     RoomsOptions.normalRoomOptions(input);

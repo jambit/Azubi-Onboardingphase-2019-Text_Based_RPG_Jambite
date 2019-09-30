@@ -13,6 +13,8 @@ public class Kickerroom {
         Music kickerroomMusic = new Music();
         kickerroomMusic.run("kickerroomMusic");
 
+        System.out.println("Du befindest dich im Kickerraum");
+
         boolean inRoom = true;
         Cherry cherry = new Cherry();
         cherry.summonCherry();

@@ -37,7 +37,7 @@ public class Basement {
                 "             | |                   | |\n" +
                 "             |_|___________________|_|\n");
 
-        System.out.println("");
+        System.out.println("Du befindest dich in einer riesigen Lagerhalle");
 
         boolean inRoom = true;
         while (inRoom) {
@@ -47,8 +47,12 @@ public class Basement {
             switch (input) {
 
                 case "umsehen":
-
+                    System.out.println("In der Mitte des Raumes befindet sich eine komplexe Apperatur mit der " +
+                            "Aufschrift \"Teleporter\"");
+                    System.out.println("Der Aufzug ist hinter dir [hochfahren]");
                     break;
+                case "hochfahren":
+                    Elevator.startElevator();
 
                 case "Tastenfeld bedienen":
 
@@ -182,7 +186,7 @@ public class Basement {
                                 System.out.println("du spürst einen stechenden Schmerz am Kopf. Bevor dir schwarz " +
                                         "vor Augen wird bemerkst\n du noch wie du am Bein aus dem Zimmer geschleift " +
                                         "wirst und dir deine Schlüsselkarte entrissen wird");
-                                Leben.currentItems[0] = "⍰";
+                                GameState.currentItems[0] = "⍰";
                                 GameState.firstTimeInElevator = true;
                                 GameState.hatSichSchonInElevatorUmgesehen = false;
                                 Elevator.startElevator();
@@ -206,6 +210,8 @@ public class Basement {
                                 break;
 
                         }
+                    } else {
+                        System.out.println("Du benötigst eine extrem starke Batterie \uD83D\uDD0B");
                     }
             }
         }

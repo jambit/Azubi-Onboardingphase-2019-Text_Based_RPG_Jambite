@@ -69,6 +69,13 @@ public class TApreroom {
                             "  \\               -Alma      \\\n" +
                             "   \\__________________________\\\n" +
                             "   ()__________________________)");
+                    System.out.println("\n unter dem Zelltel liegt ein weiterer Zettel:");
+                    System.out.println("\n __________________________  \n" +
+                            "()_________________________)\n" +
+                            " \\  der Stromschalter ist   \\\n" +
+                            "  \\       auf dem Dach       \\\n" +
+                            "   \\__________________________\\\n" +
+                            "   ()__________________________)");
 
                     System.out.println("");
                 case "zurück gehen":

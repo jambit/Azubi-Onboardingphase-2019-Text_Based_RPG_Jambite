@@ -45,7 +45,7 @@ public class Elevator {
             switch (input) {
 
                 case "umsehen":
-
+                    System.out.println("Der Aufzug ");
                     if (GameState.hatSichSchonInElevatorUmgesehen == true) {
                         System.out.println("du entdeckst in der linken Ecke des Aufzugs hinter dir eine Schlüsselkarte \n"
                                 + "willst du sie mitnehmen?");

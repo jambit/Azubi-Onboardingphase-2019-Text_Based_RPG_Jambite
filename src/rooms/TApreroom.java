@@ -78,6 +78,7 @@ public class TApreroom {
                             "   ()__________________________)");
 
                     System.out.println("");
+                    break;
                 case "zurück gehen":
                     Elevator.startElevator();
                 default:

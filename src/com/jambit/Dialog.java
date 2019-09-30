@@ -70,6 +70,10 @@ public class Dialog {
                 "persons, living or dead, is entirely coincidental.");
         System.out.println("NO DOGS WERE HARMED DURING THE MAKING OF THIS GAME. THE CAT GOT SICK AND SOMEBODY SHOT" +
                 " A DUCK BUT THAT'S ABOUT IT.");
-        System.out.println("\nNo thanks to Jovan for his help with git ;)");
+
+        System.out.println("no thanks whatsoever to xyz");
+
+        System.out.println("special thanks to Cherry, Jannik, David, ... for dealing with some errors we had clearing" +
+                " our back during the stressful days before our release");
     }
 }

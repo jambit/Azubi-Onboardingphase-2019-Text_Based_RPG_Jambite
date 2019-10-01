@@ -5,62 +5,21 @@ and escape the haunted company building.
 
 ## How to install the game:
 
-1. clone the release repository to a folder of your choice
-2. open a shell of your choice
-3. cd into the directory of the cloned repository
-4. enter "java -jar Jambite.jar
+recommended for Windows
+1. klick on the link https://github.com/jambit/Text_Based_RPG_Jambite/releases
+2. download the Source code (zip) file
+3. unzip the file to any desirable folder
+4. execute the Start.bat file (Windows)
 5. have fun
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+recommended for any other os
+1. klick on the link https://github.com/jambit/Text_Based_RPG_Jambite/releases
+2. download the Source code (zip) file
+3. unzip the file to any desirable folder
+2. open a terminal of your choice
+3. cd into the directory .../Text_Based_RPG_Jambite-1.0.0
+4. enter "java -jar Jambite.jar
+5. have fun
 
 
 

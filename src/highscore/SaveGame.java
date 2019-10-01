@@ -12,7 +12,7 @@ public class SaveGame {
         {
 
             {
-                FileReader fr = new FileReader("src/highscore/JambiteHighscore.txt");
+                FileReader fr = new FileReader("JambiteHighscore.txt");
                 BufferedReader br = new BufferedReader(fr);
 
                 String zeile = "";
@@ -32,7 +32,7 @@ public class SaveGame {
 
     public static void setHighscore() throws IOException {
 
-        FileWriter fw = new FileWriter("src/highscore/JambiteHighscore.txt", true);
+        FileWriter fw = new FileWriter("JambiteHighscore.txt", true);
         BufferedWriter bw = new BufferedWriter(fw);
         bw.newLine();
         bw.append(GameState.name + ": "+ GameState.xp);

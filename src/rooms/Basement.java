@@ -33,8 +33,6 @@ public class Basement {
                 "             | |                   | |\n" +
                 "             | |                   | |\n" +
                 "             | |                   | |\n" +
-                "             | |                   | |\n" +
-                "             | |                   | |\n" +
                 "             |_|___________________|_|\n");
 
         System.out.println("Du befindest dich in einer riesigen Lagerhalle");
@@ -48,7 +46,7 @@ public class Basement {
 
                 case "umsehen":
                     System.out.println("In der Mitte des Raumes befindet sich eine komplexe Apperatur mit der " +
-                            "Aufschrift \"Teleporter\"");
+                            "Aufschrift \"Teleporter\"[teleportieren]");
                     System.out.println("Der Aufzug ist hinter dir [hochfahren]");
                     break;
                 case "hochfahren":
@@ -213,7 +211,10 @@ public class Basement {
                     } else {
                         System.out.println("Du benötigst eine extrem starke Batterie \uD83D\uDD0B");
                     }
+                default:
+                    RoomsOptions.normalRoomOptions(input);
             }
         }
+
     }
 }
